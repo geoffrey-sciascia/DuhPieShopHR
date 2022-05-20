@@ -15,6 +15,12 @@ namespace DuhPieShopHR
             double hourlyRate = 21.20;
             int numberOfHoursWorked = 160;
 
+            long veryLongMonth = numberOfHoursWorked;
+            double d = 12345678.9;
+            int x = (int)d;
+
+            int intVeryLongMonth = (int)veryLongMonth;
+
             double currentWage = hourlyRate * numberOfHoursWorked;
 
             Console.WriteLine(currentWage);
@@ -57,6 +63,8 @@ namespace DuhPieShopHR
 
             Console.WriteLine(startHour.ToLongDateString());
             Console.WriteLine(endHour.ToShortTimeString());
+
+
 
             Console.ReadLine();
         }
