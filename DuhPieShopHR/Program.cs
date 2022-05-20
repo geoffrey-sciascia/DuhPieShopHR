@@ -30,11 +30,17 @@ namespace DuhPieShopHR
 
             numberOfEmployees--;
 
-            bool a;
-            int b;
+            int maxValue = int.MaxValue;
+            int minValue = int.MinValue;
+
+            char userSelection = 'a';
+            char upperCase = char.ToUpper(userSelection);
+            bool isDigit = char.IsDigit(userSelection);
+            bool isLetter = char.IsLetter(userSelection);
 
 
             Console.ReadLine();
         }
     }
 }
+ 
