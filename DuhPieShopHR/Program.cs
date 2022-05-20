@@ -38,6 +38,25 @@ namespace DuhPieShopHR
             bool isDigit = char.IsDigit(userSelection);
             bool isLetter = char.IsLetter(userSelection);
 
+            DateTime hireDate = new DateTime(2021, 03, 28, 14, 30, 0);
+
+            Console.WriteLine(hireDate);
+
+            DateTime exitDate = new DateTime(2021, 12, 11);
+
+            DateTime startDate = hireDate.AddDays(15);
+
+            Console.WriteLine(startDate);
+
+            DateTime currentDate = DateTime.Now;
+            bool areWeInDST = currentDate.IsDaylightSavingTime();
+
+            DateTime startHour = DateTime.Now;
+            TimeSpan workTime = new TimeSpan(0, 35, 0);
+            DateTime endHour = startHour.Add(workTime);
+
+            Console.WriteLine(startHour.ToLongDateString());
+            Console.WriteLine(endHour.ToShortTimeString());
 
             Console.ReadLine();
         }
