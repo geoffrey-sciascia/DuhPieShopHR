@@ -6,11 +6,11 @@ namespace DuhPieShopHR
     {
         static void Main(string[] args)
         {
-            int monthlyWage = 1234;
-            int months = 12, hours = 1000;
+            var monthlyWage = 1234;
+            int months = 12, bonus = 1000;
 
-            bool isActive = true;
-            double rating = 99.25;
+            var isActive = true;
+            var rating = 99.25;
 
             double hourlyRate = 21.20;
             int numberOfHoursWorked = 160;
@@ -21,7 +21,7 @@ namespace DuhPieShopHR
 
             int intVeryLongMonth = (int)veryLongMonth;
 
-            double currentWage = hourlyRate * numberOfHoursWorked;
+            double currentWage = hourlyRate * numberOfHoursWorked + bonus;
 
             Console.WriteLine(currentWage);
 
